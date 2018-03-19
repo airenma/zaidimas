@@ -1,33 +1,36 @@
 body {
-  position: absolute;
   margin: 0;
   padding: 0;
   width: 100%;
   background: #000;
 }
-body .nav {
-  position: fixed;
-  left: 10%;
-  display: block;
+body .header {
+  width: 60%;
+  margin: auto;
+}
+body .header .nav {
+  position: fixed!important;
+  display: inline-block;
   margin: auto;
   background: #000;
   opacity: 0.5;
 }
-body .nav ul {
+body .header .nav ul {
+  position: relative;
   float: right;
 }
-body .nav ul li {
+body .header .nav ul li {
   display: inline-block;
   list-style-type: none;
   margin-right: 10px;
 }
-body .nav ul li a {
+body .header .nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   opacity: 1;
 }
-body .nav ul li a:hover {
+body .header .nav ul li a:hover {
   text-decoration: underline;
   color: blue;
 }
@@ -38,30 +41,30 @@ body .level1 {
   height: 800px;
   box-sizing: border-box;
 }
-body .level2 {
-  width: 1570px;
-  height: 100%;
-  position: relative;
-}
-body .level2 .center {
+body .center {
   margin: 0 auto;
   padding-top: 30px;
   width: 100%;
   height: 70px;
 }
-body .level2 .center .text {
+body .center .text {
   width: 7%;
   margin: auto;
   color: red;
   text-shadow: 0px 0px 50px ;
 }
-body .level2 .center .sign {
+body .center .sign {
   margin: 0 auto;
   padding-top: 10px;
   background: url(/img/warningSmall.png) no-repeat;
   background-size: contain;
   width: 40px;
   height: 40px;
+}
+body .level2 {
+  position: static;
+  width: 100%;
+  height: 1410px;
 }
 body .level2 .phraze {
   width: 90%;
@@ -115,7 +118,7 @@ body .level2 .boxing .right {
   display: inline-block;
   float: right;
   width: 50%;
-  height: 400px;
+  height: 1200px;
 }
 body .level2 .boxing .right .right1 {
   position: relative;
@@ -125,11 +128,16 @@ body .level2 .boxing .right .right1 {
 }
 body .level2 .boxing .right .right1 .center .text {
   width: 30%;
+  text-align: center;
 }
 body .level2 .boxing .right .right1 .center .sign {
-  background: url(/img/warningSmall.png) no-repeat;
-  width: 40px;
-  height: 40px;
+  background: url(/img/%C5%A1eima.png) no-repeat;
+  width: 20%;
+  height: 130px;
+  background-size: cover;
+}
+body .level2 .boxing .right .right1 .center .phraze p {
+  color: white;
 }
 body .level2 .boxing .right .right2 {
   width: 100%;
@@ -142,6 +150,44 @@ body .level2 .boxing .right .right3 {
   height: 400px;
   background: #000;
 }
+body .level2 .boxing .right .right3 .center .text {
+  width: 30%;
+  text-align: center;
+}
 body .level2 .boxing .right .right3 .center .sign {
-  background: url(/img/warningSmall.png) no-repeat;
+  background: url(/img/turistai.png) no-repeat;
+  width: 24%;
+  height: 130px;
+  background-size: cover;
+}
+body .level2 .boxing .right .right3 .center .phraze p {
+  color: white;
+}
+body .level3 {
+  width: 100%;
+  height: 1200px;
+  background: white;
+}
+body .level3 .center {
+  margin-bottom: 40px;
+}
+body .level3 .center .text {
+  color: #000;
+  text-shadow: 0 0 0;
+}
+body .level3 .center .sign {
+  background: url(/img/kambariai.png) no-repeat -13px 0px;
+  background-size: contain;
+  width: 70px;
+  height: 60px;
+}
+body .level3 .image1 {
+  background: url(/img/3a.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 800px;
+}
+body .level3 .image1 p {
+  display: inline-block;
+  position: static;
 }
