@@ -9,7 +9,7 @@ body .header {
   margin: auto;
 }
 body .header .nav {
-  position: fixed!important;
+  position: fixed !important;
   display: inline-block;
   margin: auto;
   background: #000;
@@ -45,7 +45,7 @@ body .center {
   margin: 0 auto;
   padding-top: 30px;
   width: 100%;
-  height: 70px;
+  height: 80px;
 }
 body .center .text {
   width: 7%;
@@ -62,9 +62,8 @@ body .center .sign {
   height: 40px;
 }
 body .level2 {
-  position: static;
   width: 100%;
-  height: 1410px;
+  height: 100%;
 }
 body .level2 .phraze {
   width: 90%;
@@ -76,7 +75,6 @@ body .level2 .phraze p {
   text-align: center;
 }
 body .level2 .boxing {
-  position: absolute;
   width: 100%;
   height: 1200px;
 }
@@ -165,7 +163,7 @@ body .level2 .boxing .right .right3 .center .phraze p {
 }
 body .level3 {
   width: 100%;
-  height: 1200px;
+  height: 100%;
   background: white;
 }
 body .level3 .center {
@@ -176,18 +174,69 @@ body .level3 .center .text {
   text-shadow: 0 0 0;
 }
 body .level3 .center .sign {
-  background: url(/img/kambariai.png) no-repeat -13px 0px;
+  background: url(/img/kambariai.png) no-repeat;
   background-size: contain;
   width: 70px;
-  height: 60px;
+  height: 70px;
 }
-body .level3 .image1 {
+body .image1 {
   background: url(/img/3a.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 800px;
 }
-body .level3 .image1 p {
+body .image1 .position {
+  position: inherit;
   display: inline-block;
-  position: static;
+  width: 40%;
+  left: 5%;
+  margin-top: 25%;
+}
+body .image1 .position p {
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-size: 1.5rem;
+}
+body .levelpic {
+  background: white;
+  width: 100%;
+  height: 600px;
+}
+body .levelpic .image2 {
+  display: inline-block;
+  float: left;
+  background: url(/img/3b.jpg) no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 100%;
+}
+body .levelpic .righttext {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  height: 100%;
+  color: red;
+}
+body .levelpic .righttext .box {
+  background: black;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+}
+body .levelpic .righttext .box p {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+body .levelpic .righttext .box p span {
+  color: red;
+}
+body .levelpic .level4 {
+  width: 100%;
+  background: #000;
+}
+body .levelpic .level4 button {
+  margin-left: 80%;
+  color: green;
 }

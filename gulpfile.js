@@ -9,10 +9,10 @@ gulp.task('less', function () {
 });
 
 gulp.task('default', function() {
-    gulp.watch('less');
+    gulp.run('less');
 
     gulp.watch('./css/**', function(event) {
-        gulp.watch('less');
+        gulp.run('less');
     })
 
 })
