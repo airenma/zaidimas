@@ -216,7 +216,11 @@ body .levelpic .righttext {
   float: right;
   width: 40%;
   height: 100%;
-  color: red;
+}
+body .levelpic .righttext p {
+  padding: 10px;
+  width: 90%;
+  text-align: justify;
 }
 body .levelpic .righttext .box {
   background: black;
@@ -225,9 +229,11 @@ body .levelpic .righttext .box {
   height: 70%;
 }
 body .levelpic .righttext .box p {
+  padding: 5px;
   text-align: center;
   margin: auto;
   color: white;
+  font-size: 1.5rem;
 }
 body .levelpic .righttext .box p span {
   color: red;
@@ -239,4 +245,27 @@ body .levelpic .level4 {
 body .levelpic .level4 button {
   margin-left: 80%;
   color: green;
+}
+body .button {
+  float: right;
+  left: 20px;
+  width: 25%;
+  height: 50px;
+}
+body .button .click {
+  background: red;
+  width: 35%;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+body .button .click a {
+  text-decoration: none;
+  color: white;
+}
+body .button .click .btn:hover {
+  background-color: #fff;
+  color: red;
 }

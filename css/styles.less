@@ -261,7 +261,12 @@ body{
             float: right;
             width: 40%;
             height: 100%;
-            color:red;
+            p{
+                padding: 10px;
+                width: 90%;
+                text-align: justify;
+            }
+            
             
             .box{
                 background: black;
@@ -269,9 +274,11 @@ body{
                 width: 70%;
                 height: 70%;
                 p{
+                    padding: 5px;
                     text-align: center;
                     margin: auto;
                     color: white;
+                    font-size: 1.5rem;
                     
                     span{
                         color:red;
@@ -289,5 +296,32 @@ body{
         color:green;
     }
         }}
+    .button{
+        
+        float:right;
+        left:20px;
+        width: 25%;
+        height: 50px;
+        
+        .click{
+            background: red;
+            width: 35%;
+            margin:5px;
+            padding: 7px;
+            text-align: center;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .btn:hover{
+                background-color: #fff;
+                
+                color: red;
+//                border: 1px solid #db4f44;
+            }
+        }
+    }
  
 } //END body
