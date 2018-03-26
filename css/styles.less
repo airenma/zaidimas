@@ -49,7 +49,8 @@ body{
     height: 80px;
     
     .text{
-        width: 7%;
+        text-align: center;
+//        width: 7%;
         margin: auto;
         color: red;
         text-shadow: 0px 0px 50px ;
@@ -459,15 +460,15 @@ body{
     background: url(../img/5.jpg)no-repeat;
     background-size: cover;
     .center{
-        margin-top:20px;
-        
-    
-    .text{
-        color: white;
-    }
+        margin-top:20px;    
+        .text{
+            color: white;
+        }
     .sign{
-        position: relative;
-        background: url(../img/rezervacija.jpg)no-repeat;
+//        position: relative;
+        background: url(../img/rezervacija.png)no-repeat;
+        background-size: contain;
+        background-position: center;
     }
         }
     
@@ -504,10 +505,101 @@ body{
             height: 100%;
             float:right;
             background:rgba(0, 0, 0, 0.5);
-            
+            color:white;
+            .center{
+                margin:0;
+                height: 40px;
+                text-align: center;
+                font-weight: bold;
+                p{
+                    margin: 0;
+                }
+                
+                span{
+                    color:red;
+                }
+            }
+            .kontakt{
+                width: 80%;
+                margin:auto;
+                p{
+                    
+                    span{
+                    color:red;
+                    }
+                
+                }
+                
+            }
         }  
     }
-}
+}//END rezervacija
+    
+    .levelDUK{
+        width: 100%;
+        height: 800px;
+        background: white;
+        
+        .center{
+            .text{
+                text-align: center;
+            }
+            .sign{
+             background: url(../img/ic_info_outline_black_24dp_2x.png)no-repeat; 
+                background-position: center;
+            }
+        }
+        .question{
+            width: 100%;
+           padding-left: 70px;
+            .black{
+                background: grey;
+                p{
+                    color:white;
+                    text-transform:uppercase;
+                    padding-left:20px
+                }
+            }
+            .white{
+                margin:0;
+                padding: 0;
+                p{
+                    padding-left:20px;
+                    margin:0;                
+                }
+            }
+        }//end QUESTION
+    }//end levelDUK
+    
+    .footer{
+        width: 100%;
+        height: 80px;
+        background: #000;
+        
+        ul{
+            text-align: center;
+            
+            li{
+                display: inline-block;
+                text-decoration: none;
+                width:24%;
+                vertical-align: top;
+                
+                img{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+        }
+                p{
+            color:white;
+            span{
+                color:red;
+            }
+        }
+            }
+        }
+        
+    }
 } //END body
 
 
