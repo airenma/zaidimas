@@ -12,8 +12,7 @@ body .header .nav {
   position: fixed !important;
   display: inline-block;
   margin: auto;
-  background: #000;
-  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.5);
 }
 body .header .nav ul {
   position: relative;
@@ -28,14 +27,13 @@ body .header .nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  opacity: 1;
 }
 body .header .nav ul li a:hover {
   text-decoration: underline;
   color: blue;
 }
 body .level1 {
-  background: url(/img/1.jpg) no-repeat;
+  background: url(../img/1.jpg) no-repeat;
   background-size: contain;
   width: 100%;
   height: 800px;
@@ -56,7 +54,7 @@ body .center .text {
 body .center .sign {
   margin: 0 auto;
   padding-top: 10px;
-  background: url(/img/warningSmall.png) no-repeat;
+  background: url(../img/warningSmall.png) no-repeat;
   background-size: contain;
   width: 40px;
   height: 40px;
@@ -89,7 +87,7 @@ body .level2 .boxing .left .left1 {
   position: relative;
   width: 100%;
   height: 400px;
-  background: url(/img/2a.jpg) no-repeat;
+  background: url(../img/2a.jpg) no-repeat;
   background-size: cover;
 }
 body .level2 .boxing .left .left2 {
@@ -98,10 +96,11 @@ body .level2 .boxing .left .left2 {
   background: white;
 }
 body .level2 .boxing .left .left2 .center .sign {
-  background: url(/img/%C4%AFmon%C4%97.png) no-repeat;
+  background: url(../img/%C4%AFmon%C4%97.png) no-repeat;
   background-size: cover;
+  background-position: center;
   width: 15%;
-  height: 130px;
+  height: 100px;
 }
 body .level2 .boxing .left .left2 .phraze p {
   color: #000;
@@ -109,7 +108,7 @@ body .level2 .boxing .left .left2 .phraze p {
 body .level2 .boxing .left .left3 {
   width: 100%;
   height: 400px;
-  background: url(/img/2c.jpg) no-repeat;
+  background: url(../img/2c.jpg) no-repeat;
   background-size: cover;
 }
 body .level2 .boxing .right {
@@ -129,7 +128,7 @@ body .level2 .boxing .right .right1 .center .text {
   text-align: center;
 }
 body .level2 .boxing .right .right1 .center .sign {
-  background: url(/img/%C5%A1eima.png) no-repeat;
+  background: url(../img/%C5%A1eima.png) no-repeat;
   width: 20%;
   height: 130px;
   background-size: cover;
@@ -140,7 +139,7 @@ body .level2 .boxing .right .right1 .center .phraze p {
 body .level2 .boxing .right .right2 {
   width: 100%;
   height: 400px;
-  background: url(/img/2b.jpg) no-repeat;
+  background: url(../img/2b.jpg) no-repeat;
   background-size: cover;
 }
 body .level2 .boxing .right .right3 {
@@ -153,7 +152,7 @@ body .level2 .boxing .right .right3 .center .text {
   text-align: center;
 }
 body .level2 .boxing .right .right3 .center .sign {
-  background: url(/img/turistai.png) no-repeat;
+  background: url(../img/turistai.png) no-repeat;
   width: 24%;
   height: 130px;
   background-size: cover;
@@ -174,13 +173,11 @@ body .level3 .center .text {
   text-shadow: 0 0 0;
 }
 body .level3 .center .sign {
-  background: url(/img/kambariai.png) no-repeat;
-  background-size: contain;
-  width: 70px;
-  height: 70px;
+  background: url(../img/kambariai.png) no-repeat;
+  background-position: center;
 }
 body .image1 {
-  background: url(/img/3a.jpg) no-repeat;
+  background: url(../img/3a.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   height: 800px;
@@ -206,7 +203,7 @@ body .levelpic {
 body .levelpic .image2 {
   display: inline-block;
   float: left;
-  background: url(/img/3b.jpg) no-repeat;
+  background: url(../img/3b.jpg) no-repeat;
   background-size: contain;
   width: 40%;
   height: 100%;
@@ -238,34 +235,198 @@ body .levelpic .righttext .box p {
 body .levelpic .righttext .box p span {
   color: red;
 }
-body .levelpic .level4 {
+body .levelreg {
   width: 100%;
+  height: 50px;
   background: #000;
 }
-body .levelpic .level4 button {
-  margin-left: 80%;
-  color: green;
-}
-body .button {
+body .levelreg .button {
   float: right;
   left: 20px;
   width: 25%;
-  height: 50px;
+  height: 100%;
 }
-body .button .click {
+body .levelreg .button .click {
   background: red;
   width: 35%;
   margin: 5px;
   padding: 7px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: all 0.3s ease;
 }
-body .button .click a {
+body .levelreg .button .click a {
   text-decoration: none;
   color: white;
 }
-body .button .click .btn:hover {
-  background-color: #fff;
+body .levelreg .button .click .click:hover {
+  background: #fff;
   color: red;
+}
+body .level5 {
+  width: 100%;
+  height: 150px;
+  background: white;
+}
+body .level5 .center {
+  text-align: center;
+}
+body .level5 .center .text {
+  color: black;
+  text-shadow: 0 0 0;
+}
+body .level5 .center .sign {
+  background: url(../img/galerija.png) no-repeat;
+  background-position: center;
+}
+body .boxing2 {
+  background: white;
+  width: 100%;
+  height: 400px;
+}
+body .boxing2 .left2 {
+  display: inline-block;
+  background: url(../img/Layer%201.png) no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 80%;
+}
+body .boxing2 .left2 .shadow {
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  box-shadow: 15px 25px 30px 3px;
+  background-position: center;
+  margin-left: 39%;
+  margin-top: 40%;
+}
+body .boxing2 .right2 {
+  display: inline-block;
+  float: right;
+  background: url(../img/TeamEscape_Rooms_Slide1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 80%;
+  box-shadow: 5px 5px 15px 5px;
+}
+body .radiacija {
+  width: 100%;
+  height: 700px;
+  background: url(../img/4a.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .radiacija .radiotext {
+  margin-top: 5%;
+  width: 30%;
+  display: inline-block;
+  float: right;
+}
+body .radiacija .radiotext p {
+  width: 95%;
+  text-align: right;
+  color: white;
+}
+body .level6 {
+  width: 100%;
+  height: 700px;
+  background: white;
+}
+body .level6 .left6 {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+body .level6 .left6 p {
+  margin: 40px auto 20px;
+  width: 70%;
+  text-align: justify;
+}
+body .level6 .left6 .box {
+  background: black;
+  margin: auto;
+  width: 60%;
+  height: 70%;
+}
+body .level6 .left6 .box p {
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 1.5rem;
+}
+body .level6 .left6 .box p span {
+  color: red;
+}
+body .level6 .mask {
+  float: right;
+  background: url(../img/4b.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+body .button {
+  float: left;
+}
+body .button .click2 {
+  background: red;
+  width: 35%;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+body .button .click2 a {
+  text-decoration: none;
+  color: white;
+}
+body .button .click2 .click:hover {
+  background: #fff;
+  color: red;
+}
+body .rezervacija {
+  width: 100%;
+  height: 800px;
+  background: url(../img/5.jpg) no-repeat;
+  background-size: cover;
+}
+body .rezervacija .center {
+  margin-top: 20px;
+}
+body .rezervacija .center .text {
+  color: white;
+}
+body .rezervacija .center .sign {
+  position: relative;
+  background: url(../img/rezervacija.jpg) no-repeat;
+}
+body .rezervacija .regbox {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+}
+body .rezervacija .regbox .lbox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: rgba(255, 0, 0, 0.5);
+}
+body .rezervacija .regbox .lbox p {
+  text-align: center;
+  color: white;
+}
+body .rezervacija .regbox .lbox form input {
+  display: block;
+  width: 80%;
+  height: 15px;
+  background: white;
+  margin: 10px auto 10px;
+}
+body .rezervacija .regbox .rbox {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background: rgba(0, 0, 0, 0.5);
 }
