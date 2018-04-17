@@ -123,7 +123,7 @@
 <div class="levelreg">
 	<div class="button">
 	    <div class="click">
-	        <a href="#"><div class="btn">
+	        <a href="#c"><div class="btn">
 	            REGISTRUOKIS
 	        </div></a>
 	    </div>
@@ -180,9 +180,9 @@
 <div class="levelreg">
     <div class="button">
 	    <div class="click2">
-	        <a href="#"><div class="btn">
-	            REGISTRUOKIS
-	        </div></a>
+	        <div class="btn">
+	            <a href="#c">REGISTRUOKIS</a>
+	        </div>
 	    </div>
 	</div>  
 </div>
@@ -199,14 +199,63 @@
             REZERVACIJA
         </p>
        
-	        <form action ="index.php" method="post" target="_blank" name="myemailform" >
+	        <form action="send.php" method="post" name="myemailform" >
 	              
-	            <input required placeholder="Tel.: +370 600 00 000" type="text"  name="name1">
+	            <input required placeholder="Tel.: +370 600 00 000" type="text" name="phone"><br/>
 	            
-	            <input required placeholder="El. paštas: jumanji@jumanji.lt" type="email1"><br>
+	            <input required placeholder="El. paštas: jumanji@jumanji.lt" type="text" name="email"><br/>
 	     
+	            
+	           <select name="month">
+                    <option>Sausis</option>
+                    <option>Vasaris</option>
+                    <option>Kovas</option>
+                    <option>Balandis</option>
+                    <option>Gegužė</option>
+                    <option>Birželis</option>
+                    <option>Liepa</option>
+                    <option>Rugpjūtis</option>
+                    <option>Rugsėjis</option>
+                    <option>Spalis</option>
+                    <option>Lapkritis</option>
+                    <option>Gruodis</option>
+               </select>
+               
+               <select name="day">
+                   <option value="">1</option>
+                   <option value="">2</option>
+                   <option value="">3</option>
+                   <option value="">4</option>
+                   <option value="">5</option>
+                   <option value="">6</option>
+                   <option value="">7</option>
+                   <option value="">8</option>
+                   <option value="">9</option>
+                   <option value="">10</option>
+                   <option value="">11</option>
+                   <option value="">12</option>
+                   <option value="">13</option>
+                   <option value="">14</option>
+                   <option value="">15</option>
+                   <option value="">16</option>
+                   <option value="">17</option>
+                   <option value="">18</option>
+                   <option value="">19</option>
+                   <option value="">20</option>
+                   <option value="">21</option>
+                   <option value="">22</option>
+                   <option value="">23</option>
+                   <option value="">24</option>
+                   <option value="">25</option>
+                   <option value="">26</option>
+                   <option value="">27</option>
+                   <option value="">28</option>
+                   <option value="">29</option>
+                   <option value="">30</option>
+                   <option value="">31</option>
+               </select>
+               
 	            <input type="submit" value="SIUSTI" name="submit" id="date">
-	        
 	        
 	        </form>
 	     </div>
@@ -321,12 +370,12 @@
    
     <ul>
         <a name="e"></a>
-        <li><p><span>Mus rasite:</span> Festivalio g.7, Visaginas (Technologijos ir verslo profesinio mokymo centras)</p>
+        <li><p><span>Mus rasite:</span></p> <p> Festivalio g.7, Visaginas (Technologijos ir verslo profesinio mokymo centras)</p>
         </li>
         <li><p><span>Darbo laikas:</span></p>
 	           <p>I-V 12:00-21:00</p>
 	           <p>VI-VII 10:00-21:00</p></li>
-        <li><p><span>Tel.:</span> +370 6...</p>
+        <li><p><span>Tel.:</span></p> <p> +370 6...</p>
 	           <p>El.paštas: jumanji@...</p></li>
         <li><a href=""><img src="img/images.png" alt=""></a></li>
     </ul>

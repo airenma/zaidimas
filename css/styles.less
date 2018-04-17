@@ -35,7 +35,7 @@ body{
 
 .level1{
     background: url(../img/1.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 800px;
     box-sizing: border-box;
@@ -313,12 +313,22 @@ body{
                 text-decoration: none;
                 color: white;
             }
-            .click:hover{
-                background: #fff;
-                color: red;
-//                border: 1px solid #db4f44;
-            }
+            
         }
+        .click:hover{
+            color: red;
+            width: 35%;
+            margin:5px;
+            padding: 7px;
+            text-align: center;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background: #fff;
+
+            a:hover{
+                color:red;
+            }
+            }
     }
      }
  
@@ -445,12 +455,23 @@ body{
                 text-decoration: none;
                 color: white;
             }
-            .click:hover{
-                background: #fff;
-                color: red;
-//                border: 1px solid #db4f44;
-            }
+            
         }
+    
+    .click2:hover{
+            color: red;
+            width: 35%;
+            margin:5px;
+            padding: 7px;
+            text-align: center;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background: #fff;
+
+            a:hover{
+                color:red;
+            }
+            }
 }
     
     
@@ -490,7 +511,10 @@ body{
             form{
                
                 #date{
-                    width: 19px;
+                    width:70px;
+                    margin-right: 50px;
+                    border: 2px solid black;
+                    
                 }
                 input{
                     display: block;
@@ -500,6 +524,11 @@ body{
                     margin:10px auto 10px;
                     
                     
+                }
+                select{
+                    width: 20%;
+                    display: inline-block;
+                    margin:10px 10% 10px;
                 }
             }
         }
