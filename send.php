@@ -19,12 +19,12 @@ if (isset($_POST['month']))
     $month = strip ($_POST['month']);
 
 if (isset($_POST['day']))     
-    $month = strip ($_POST['day']);
+    $day = strip ($_POST['day']);
 
 // адрес почты куда придет письмо
 $address = "vilties@gmail.com"; 
 // текст письма 
-$note_text = "Телефон : $phone\r\nE-mail : $email\r\n Date: " . $month . $day;
+$note_text = "Телефон : $phone\r\nE-mail : $email\r\n Date: " .$month .$day;
 $message = $note_text;
 
 mail($address, $note_text, $message, "Content-type:text/plain; charset=utf8"); 
