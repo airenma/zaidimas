@@ -1,16 +1,20 @@
+html{
+     line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
 
+}
 body {
 
   font-family: 'Calibri', sans-serif;
-    
     margin:0;
 	padding:0;
 	width: 100%;
 	background: #000;
-
     font-size: 1vw;
-
-    
+     
     
     .header{
         width: 100%;
@@ -19,21 +23,22 @@ body {
         
         
         .nav{
-        width: 80%;
-//        display: inline-block;
-        margin: auto;
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+//            margin: auto;
         
     ul{
-        width: 100%;
-        float: right;        
+//        width: 100%;
+//        float: right;        
     li{
-        display: inline-block;
+        display: inline-flex;
+//        justify-content: center;
         list-style-type: none;
         margin-right:10px;
         width: 15%;
-//        max-width: 200px;
         text-align: center;
-        vertical-align: middle;
+//        vertical-align: middle;
         
     a{
         text-transform:uppercase;
@@ -54,8 +59,7 @@ body {
     background-size: 100%;
     width: 100%;
     height: 700px;
-    
-    box-sizing: border-box;
+//    box-sizing: border-box;
            
     
     } //END level1
@@ -244,13 +248,23 @@ body {
             background-size: cover;
             width: 100%;
             height: 800px;
+    box-sizing: content-box;
             
+    .full{
+        width: 100%;
+        height: 40%;
+        overflow:hidden;
+        
+    }
+        
             .position{
             position:absolute;
-            display: inline-block;
+            display: inline-flex;
             width:40%;
+            height: 50%;
             left:5%;
-            margin-top: 25%;
+            
+                overflow:hidden;
                     
             p{
                 width: 80%;
@@ -259,14 +273,15 @@ body {
                 font-size: 2vw;
             }
         }
-        
+    
     }
     
     .levelpic{
         background: white;
         width: 100%;
         height: 700px;
-        box-sizing: border-box;
+        overflow: hidden;
+       
         
         .image2{     
             display: inline-block;
@@ -295,9 +310,9 @@ body {
                 background: black;
                 margin: auto;
                 width: 70%;
-                height: 400px;
+//                height: 400px;
                 max-height: 450px;
-                box-sizing:border-box;
+                overflow: hidden;
                
                 p{
                     padding: 5px;
@@ -320,6 +335,7 @@ body {
     width: 100%;
     height: 50px;
     background: #000;
+    overflow: hidden;
   
     .button{
         float:right;
@@ -369,6 +385,7 @@ body {
             text-shadow: 0 0 0;
         }
         .sign{
+            margin-top:10px;
             background: url(../img/galerija.png)no-repeat;
             background-position: center;
         }
@@ -407,6 +424,8 @@ body {
             box-sizing: border-box;
             
             .slider {
+                //взят с https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/
+                
                   width: 100%;
                   text-align: center;
                   overflow: hidden;
@@ -538,6 +557,7 @@ img {
             width: 95%;
             text-align: right;
             color: white;
+            font-size: 1.5vw;
         }
     }
     }//END radiacija
